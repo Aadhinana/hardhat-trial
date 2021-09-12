@@ -1,5 +1,7 @@
 require("@nomiclabs/hardhat-waffle");
 
+require('dotenv').config()
+
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
@@ -25,6 +27,10 @@ module.exports = {
   networks: {
     localhost: {
       chainId: 31337
+    },
+    rinkeby:{
+      url: process.env.RINKEBY_URL,
+      accounts: [`0x${process.env.RINKEBY_ACCOUNT}`]
     }
   }
 };
