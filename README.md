@@ -12,4 +12,7 @@ Deployed in rinkeby using Infura too.
 `npx hardhat run scripts/deploy.js --network rinkeby` to deploy it in rinkeby network.
 
 
+---
 Built using [Hardhat](https://hardhat.org/) and [Vite](https://vitejs.dev/)
+
+Setup Vite first then hardhat in the dir.
